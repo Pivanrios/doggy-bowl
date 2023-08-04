@@ -3,8 +3,8 @@
 export default function SearchBar(){
 
     return(
-        <form>
-            <label >
+        <form id={'search-bar'}>
+            <label >Search:
                 <input type="text" />
             </label>
         </form>
