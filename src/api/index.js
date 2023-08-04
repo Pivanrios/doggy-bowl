@@ -13,4 +13,4 @@ const fetchPlayers = async () =>{
     }
 }
 
-export default fetchPlayers();
+export default fetchPlayers;
