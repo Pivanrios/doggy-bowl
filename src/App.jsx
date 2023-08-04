@@ -1,13 +1,12 @@
 import {Routes, Route} from 'react-router-dom'
 import './App.css'
+import Gallery from './components/Gallery'
 
 function App() {
-
-
   return (
     <>
       <Routes>
-        <Route path={'/'}/>
+        <Route path={'/'} element={<Gallery/>}/>
       </Routes>
     </>
   )
