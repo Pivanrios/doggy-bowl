@@ -1,12 +1,12 @@
 
 
-export default function Card(){
+export default function Card({key,dog}){
     
     return(
-        <>
-            <span>status</span>
-            <img src="" alt="" />
-            <h3>name</h3>
-        </>
+        <div id="card">
+            <span>{dog.status}</span>
+            <img src={dog.imageUrl} alt="" />
+            <h3>{dog.name}</h3>
+        </div>
     )
 }
