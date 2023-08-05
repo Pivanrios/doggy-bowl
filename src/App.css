@@ -28,3 +28,9 @@ Single Player
   height: 300px;
   background-color: gray;
 }
+
+
+/*Card*/
+#card>img{
+  width: 200px;
+}
