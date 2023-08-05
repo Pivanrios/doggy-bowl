@@ -6,8 +6,9 @@ const fetchPlayers = async () =>{
         const response = await fetch(url);
         const res = await response.json();
         const players = res;
-        console.log("players:",res.data.players);
-        return players.data;
+        console.log("data:", res.data);
+
+        return players.data.players;
     } catch (error) {
         console.error
     }
