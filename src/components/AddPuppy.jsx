@@ -4,7 +4,7 @@
 export default function AddPuppy(){
 
     return(
-        <form action="" id={'new-player-form'}>
+        <form  id={'new-player-form'}>
             <h3>New Player</h3>
             <label htmlFor="">Name:
                 <input type="text" />
