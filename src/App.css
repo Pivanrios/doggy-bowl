@@ -21,6 +21,7 @@ Single Player
   height: 30px;
   background-color: gray;
 }
+
 /*list*/
 ol#puppy-list{
   display: flex;
@@ -33,6 +34,7 @@ ol#puppy-list{
   width: 200px;
   height: 300px;
   background-color: gray;
+  border-radius: 20px;
 }
 
 
@@ -60,5 +62,4 @@ ol#puppy-list{
 }h3.card{
   background-color: orange;
   padding-left: 10px;
-
 }
