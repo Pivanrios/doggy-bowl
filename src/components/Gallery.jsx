@@ -31,8 +31,10 @@ export default function Gallery(){
     return(
         <>
             <SearchBar/>{//add search bar component
-        }   <AddPuppy/> {//add new player form component
-        }   {players.map(e=>{ return <Card key={e.id} dog={e}/>})}
+            }<ol id='puppy-list'>
+                <AddPuppy/>
+                {players.map(e=>{ return <Card key={e.id} dog={e}/>})}
+            </ol>  
         </>
     )
 }
