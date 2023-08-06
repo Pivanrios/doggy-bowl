@@ -1,6 +1,6 @@
 
 
-export default function Card({key,dog}){
+export default function Card({dog}){
     //determine color 
     let color = "";//declare string variable to store our color 
     if(dog.status == 'field'){//if is active or on field 
@@ -25,10 +25,10 @@ export default function Card({key,dog}){
                     <h3 className="card">{dog.name}</h3>{//footer of card where we render name
             }</div>
                 <div id="card-back">
-                    <h1>{dog.name}</h1> 
-                    <p>{dog.breed}</p> 
-                    <p>{dog.status}</p>
-                    <p>{dog.createdAt}</p>
+                    <h2>{dog.name}</h2> 
+                    <p>Breed: {dog.breed}</p> 
+                    <p>Status: {dog.status}</p>
+                    <p>Birth: {dog.createdAt}</p>
                     <button id="details-button">Details</button>
                     <button id="delete-button">Delete</button>
                 </div>
