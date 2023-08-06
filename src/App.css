@@ -31,6 +31,28 @@ Single Player
 
 
 /*Card*/
-#card>img{
+#card{
   width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}header#status{
+  width: 200px;
+  height: 20px;
+  border-top-left-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}div#status{
+  border-radius: 10px;
+  height: 10px;
+  width: 10px;
+  border: 2px solid black;
+  margin-right: 5px;
+}h3.card{
+  background-color: orange;
+  padding-left: 10px;
+
 }
