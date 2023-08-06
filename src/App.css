@@ -39,7 +39,7 @@ ol#puppy-list{
 
 
 /*Card*/
-#card{
+#card-front{
   width: 200px;
   height: 300px;
   border-radius: 20px;
@@ -47,7 +47,7 @@ ol#puppy-list{
   flex-direction: column;
   justify-content: space-between;
 }header#status{
-  width: 200px;
+  width: 100%;
   height: 20px;
   border-top-left-radius: 15px;
   display: flex;
@@ -62,4 +62,31 @@ ol#puppy-list{
 }h3.card{
   background-color: orange;
   padding-left: 10px;
+}
+#card {
+  perspective: 1000px;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}#card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}#card:hover #card-inner {
+  transform: rotateY(180deg);
+}#card-front, #card-back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}#card-back {
+  color: #000;
+  background-color: orange;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  position: relative;
+  height: 400px;
 }

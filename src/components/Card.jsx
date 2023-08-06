@@ -11,17 +11,28 @@ export default function Card({key,dog}){
 
 
     return(
-        <div id="card" className="container" style={{
-            backgroundImage:`url(${dog.imageUrl})`,//set background to our img url from the props
-            backgroundSize:'cover',
-        }}>
-            <header id="status" style={{//header of the card
-                backgroundColor:`orange`
-            }}>
-                <div id="status" style={{backgroundColor:`${color}`}}></div>{//depending our condition we set the background color
-            }</header>
-            <h3 className="card">{dog.name}</h3>{//footer of card where we render name
-            }
-        </div>
+       <div id="card">
+            <div id="card-inner">
+                <div id="card-front" className="container" style={{
+                    backgroundImage:`url(${dog.imageUrl})`,//set background to our img url from the props
+                    backgroundSize:'cover',
+                }}>
+                    <header id="status" style={{//header of the card
+                        backgroundColor:`orange`
+                    }}>
+                        <div id="status" style={{backgroundColor:`${color}`}}></div>{//depending our condition we set the background color
+                    }</header>
+                    <h3 className="card">{dog.name}</h3>{//footer of card where we render name
+            }</div>
+                <div id="card-back">
+                    <h1>{dog.name}</h1> 
+                    <p>{dog.breed}</p> 
+                    <p>{dog.status}</p>
+                    <p>{dog.createdAt}</p>
+                    <button id="details-button">Details</button>
+                    <button id="delete-button">Delete</button>
+                </div>
+            </div>
+       </div>
     )
 }
